@@ -2,18 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-attachment: scroll;
+}
+body {
+  background-color: black;
 }
 .back {
   position: relative;
-  overflow-wrap: break-word;
-  height: 40vh;
+
+  height: 60%;
 }
 .back img {
   width: 100vw;
 }
 .container {
   position: absolute;
-  top: 10%;
+  top: 5%;
   font-size: 30px;
   align-items: center;
   justify-content: center;
@@ -23,13 +27,50 @@
   margin-top: 70px;
 }
 .container img {
-  overflow: hidden;
   width: 100%;
   margin: 0 25px 0;
-  scroll-behavior: smooth;
 }
 .list {
-  width: 80vw;
-  height: 30%;
-  background-color: aqua;
+  width: 85vw;
+  height: 70vh;
+
+  margin: auto;
+
+  justify-items: center;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+.texts {
+  position: absolute;
+  right: 40%;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  width: 300px;
+}
+.options {
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  gap: 10px;
+  grid-auto-flow: dense;
+  justify-content: center;
+}
+.lino,
+.windo,
+.mack,
+.tv,
+.iphon,
+.and {
+  width: 200px;
+
+  margin: auto;
+  border-radius: 10px;
+  background-color: blue;
 }
