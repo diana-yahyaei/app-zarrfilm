@@ -3,6 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-attachment: scroll;
+.back {
+  position: relative;
+  overflow-wrap: break-word;
+  height: 40vh;
+}
+.back img {
+  width: 100vw;
+}
+.container {
+  position: absolute;
+  top: 10%;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: red;
+  height: 85%;
+  margin-top: 70px;
+}
+.container img {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 25px 0;
+  scroll-behavior: smooth;
+}
+.list {
+  width: 80vw;
+  height: 30%;
+  background-color: aqua;
 }
