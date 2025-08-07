@@ -7,6 +7,10 @@
 
 body {
   background-color: black;
+  color: white;
+}
+span {
+  color: #e98309;
 }
 .back {
   position: relative;
@@ -23,7 +27,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: red;
+
   height: 85%;
   margin-top: 70px;
 }
@@ -71,7 +75,7 @@ body {
   padding-top: 30px;
   width: 150px;
   height: 150px;
-  border-radius: 25px;
+  border-radius: 30px;
   background-color: #000000;
   border: 2px solid rgb(0, 0, 0);
 }
@@ -81,25 +85,114 @@ svg {
   width: 50px;
 }
 .lino:hover {
-  background-color: greenyellow;
+  background-color: rgb(131, 148, 110);
+  border: 2px solid rgb(131, 148, 110);
 }
 
 .windo:hover {
-  background-color: greenyellow;
+  background-color: rgb(131, 148, 110);
+  border: 2px solid rgb(131, 148, 110);
 }
 
 .mack:hover {
-  background-color: greenyellow;
+  background-color: rgb(131, 148, 110);
+  border: 2px solid rgb(131, 148, 110);
 }
 
 .tv:hover {
-  background-color: greenyellow;
+  background-color: rgb(131, 148, 110);
+  border: 2px solid rgb(131, 148, 110);
 }
 
 .iphon:hover {
-  background-color: greenyellow;
+  background-color: rgb(131, 148, 110);
+  border: 2px solid rgb(131, 148, 110);
 }
 
 .and:hover {
-  background-color: greenyellow;
+  background-color: rgb(131, 148, 110);
+  border: 2px solid rgb(131, 148, 110);
+}
+p {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 30px;
+}
+.quastions {
+  display: flex;
+}
+
+.dropdown {
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.flash {
+  width: 10px;
+  height: 10px;
+}
+.dropdown-btn {
+  width: 80vw;
+  margin: auto;
+  height: 50px;
+  color: white;
+  /* padding-top: 20px; */
+  padding: auto;
+  padding: 10px;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-content {
+  width: 80vw;
+  margin: auto;
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: #10151b;
+}
+
+.dropdown-content p {
+  padding: 10px 0;
+  color: white;
+  text-align: right;
+  justify-content: right;
+}
+
+.dropdown.active .dropdown-content {
+  max-height: 200px; /* ارتفاع مناسب برای محتوا */
+  padding: 10px 15px;
+}
+
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+.arrow {
+  transition: transform 0.3s;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+/* .divider {
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+} */
+
+.client-info {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 10px;
 }

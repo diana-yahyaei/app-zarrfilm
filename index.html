@@ -12,7 +12,7 @@
         src="https://binande.info/wp-content/themes/zarfilm185/images/landing_header_bg.jpg"
       />
       <div class="container">
-        <p><span> زر فیلم</span> را در هرجا و هر زمان تماشا کنید.</p>
+        <p>را در هرجا و هر زمان تماشا کنید<span> زر فیلم</span></p>
 
         <img src="images/app_landing.png" />
       </div>
@@ -163,14 +163,58 @@
           </div>
         </div>
       </div>
-      <!--<img
-        class="img"
-        src="https://binande.info/wp-content/themes/zarfilm185/images/app_langing_btns_bg.png"
-      />-->
     </div>
+    <p id="p">سوالات متداول</p>
+        <div class="dropdown">
+          <button class="dropdown-btn">
+          <p>ححتوا سانسور میشن؟</p>
+            <div class="arrow">
+<img class="flash" src="https://img.icons8.com/?size=100&id=2760&format=png&color=000000">
+
+
+          </div>
+          </button>
+          <div class="dropdown-content">
+                  <p>
+            هیچ یک از محتوا اعم از دوبله و زبان اصلی به هیچ عنوان سانسور شده
+            نیست و رسالت زرفیلم این است که محتوا به صورت اورجینال بدست کاربران
+            برسد
+          </p>
+          
+          </div>
+        </div>
+
+        <!-- سوال ۲ -->
+        <div class="dropdown">
+          <button class="dropdown-btn">
+            <p>اپلیکیشن و در افزایش‌هایافراد است؟</p>
+            <span class="arrow">
+              <img class="flash" src="https://img.icons8.com/?size=100&id=2760&format=png&color=000000">
+            </span>
+          </button>
+          <div class="dropdown-content">
+            <p>هیچ یک از محتوا اعم از ...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="client-info">
+        <strong>JPG Identity client</strong>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".dropdown-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const dropdown = button.parentElement;
+          dropdown.classList.toggle("active");
+        });
+      });
+    </script>
+
+    
+  
   </body>
 </html>
-
-<!--https://binande.info/wp-content/themes/zarfilm185/images/app_langing_btns_bg.png-->
-<!--https://binande.info/wp-content/themes/zarfilm185/images/app_langing_btns_bg.png
-https://binande.info/wp-content/themes/zarfilm185/images/app_langing_faq_bg.jpg?1-->
