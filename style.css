@@ -6,11 +6,12 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  color: #fff;
+  background-color: #000000;
 }
 span {
   color: #e98309;
+  margin: 5px;
 }
 .back {
   position: relative;
@@ -24,6 +25,7 @@ span {
   position: absolute;
   top: 5%;
   font-size: 30px;
+
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -117,30 +119,37 @@ p {
   text-align: center;
   justify-content: center;
   display: flex;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
-.quastions {
-  display: flex;
+#p {
+  margin: 100px;
+  font-weight: bold;
+  font-size: 30px;
 }
+/* .quastions {
+  background-image: url(https://binande.info/wp-content/themes/zarfilm185/images/app_langing_faq_bg.jpg?1);
 
+  background-repeat: no-repeat;
+  background-size: 100vw;
+} */
 .dropdown {
   width: 80vw;
   margin: auto;
   margin-bottom: 30px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 20px;
   overflow: hidden;
 }
+
 .flash {
   width: 10px;
   height: 10px;
 }
+
 .dropdown-btn {
   width: 80vw;
   margin: auto;
   height: 50px;
   color: white;
-  /* padding-top: 20px; */
   padding: auto;
   padding: 10px;
   text-align: right;
@@ -154,25 +163,42 @@ p {
   align-items: center;
 }
 
+.dropdown-btn p {
+  margin-top: 5px;
+  font-size: 15px;
+}
+.mark {
+  background-color: #e98309;
+  width: 18px;
+  height: 18px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .dropdown-content {
   width: 80vw;
+  height: 100px;
   margin: auto;
+  font-size: 15px;
   padding: 0 15px;
+
   max-height: 0;
   overflow: hidden;
+  color: white;
   transition: max-height 0.3s ease-out;
   background: #10151b;
 }
 
 .dropdown-content p {
-  padding: 10px 0;
+  padding: 30px 20px;
+  font-size: 15px;
   color: white;
   text-align: right;
   justify-content: right;
 }
 
 .dropdown.active .dropdown-content {
-  max-height: 200px; /* ارتفاع مناسب برای محتوا */
+  max-height: 200px;
   padding: 10px 15px;
 }
 
@@ -184,15 +210,4 @@ p {
   transition: transform 0.3s;
   font-size: 12px;
   margin-right: 5px;
-}
-
-/* .divider {
-  border-top: 1px solid #eee;
-  margin: 20px 0;
-} */
-
-.client-info {
-  text-align: left;
-  font-weight: bold;
-  margin-top: 10px;
 }
